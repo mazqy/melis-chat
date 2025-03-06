@@ -7,7 +7,8 @@ export default defineConfig({
   server: {
     proxy: {
       '/socket.io': {
-        target: 'http://localhost:4000',
+        target: 'https://melis-chatm.vercel.app/',
+        methods: ["GET", "POST"],
         ws: true,
       }
     }
